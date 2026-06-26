@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>RentaFácil - Vehículos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>🚗 RentaFácil - Gestión de Vehículos</h1>
+
+<!-- CREAR -->
+<div class="card">
+    <h2>Crear Vehículo</h2>
+    <input id="modelo" placeholder="Modelo">
+    <input id="categoria" placeholder="Categoría">
+    <input id="descripcion" placeholder="Descripción">
+    <input id="precio" type="number" placeholder="Precio por día">
+    <input id="unidades" type="number" placeholder="Unidades disponibles">
+    <button onclick="crearVehiculo()">Crear</button>
+</div>
+
+<hr>
+
+<!-- BUSCAR POR ID -->
+<div class="card">
+    <h2>Buscar por ID</h2>
+    <input id="buscarId" type="number" placeholder="ID">
+    <button onclick="buscarPorId()">Buscar</button>
+    <div id="resultadoId"></div>
+</div>
+
+<hr>
+
+<!-- LISTAR -->
+<div class="card">
+    <h2>Lista de Vehículos</h2>
+    <button onclick="listarVehiculos()">Cargar Lista</button>
+    <div id="lista"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
